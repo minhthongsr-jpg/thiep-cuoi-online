@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff6f4"><title>Quản trị | Thiệp Cưới Ngọc Thương</title>
+  <style>
+ :root{--pink:#a85e78;--pink-dark:#874b60;--pink-light:#fff0f3;--cream:#fffdf9;--bg:#fff6f4;--line:#ebc9cc;--text:#744e54;--muted:#967d80}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif}a{color:var(--pink-dark)}.hidden{display:none!important}
+.public-page{padding:18px 12px}.invitation,.status-card{max-width:650px;margin:0 auto 24px;background:var(--cream);border:1px solid var(--line);box-shadow:0 12px 35px #8b56620d;text-align:center}.invitation{padding:32px clamp(18px,5vw,48px);border-radius:220px 220px 18px 18px}.status-card{padding:36px 20px;border-radius:16px}.floral{font-size:36px;color:#c47c91}.brand{font:11px/1.8 Arial,sans-serif;letter-spacing:3px;color:#ae7a80}.eyebrow{font:11px/1.8 Arial,sans-serif;letter-spacing:2px;color:#b17a85;margin-top:24px}.guest-name{font-size:18px}.invitation h1{font-weight:normal;font-size:clamp(28px,7vw,44px);line-height:1.3;color:var(--pink);margin:18px 0}.invitation h1 span{display:block}.invitation h1 .ampersand{font-size:24px;margin:4px}.intro{line-height:1.8}.cover{width:100%;max-height:650px;object-fit:cover;border-radius:180px 180px 8px 8px;background:#f7e7e8}.event-date{font-size:25px;color:var(--pink);margin-top:20px}.event-time,.venue{font-size:17px}.address,.muted{color:var(--muted);font-size:14px;line-height:1.7}.button-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:24px 0}.button{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid #d9a6b3;border-radius:25px;background:#fff2f4;color:var(--pink-dark);font:14px Arial,sans-serif;text-decoration:none;cursor:pointer}.button:hover{background:#f5dce3}.button:disabled{opacity:.6;cursor:wait}.primary{background:var(--pink);color:white;border-color:var(--pink)}.section{border-top:1px solid #f0dfe0;margin-top:30px;padding-top:20px}.section h2{font-size:23px;font-weight:normal;color:var(--pink)}.countdown{font-size:18px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.gallery img{width:100%;height:210px;object-fit:cover;border-radius:8px;cursor:zoom-in}.gallery img:first-child:nth-last-child(odd){grid-column:1/-1}.rsvp-section form{max-width:420px;margin:0 auto;text-align:left}.rsvp-section label,.admin-card label{display:block;font:14px/1.5 Arial,sans-serif;margin:13px 0}.rsvp-section input,.rsvp-section select,.rsvp-section textarea,.admin-card input:not([type=checkbox]):not([type=file]),.admin-card select,.admin-card textarea{display:block;width:100%;margin-top:6px;padding:11px;border:1px solid var(--line);border-radius:8px;background:white;color:#513a3d;font:15px Arial,sans-serif}.rsvp-section button{width:100%}.feedback{font:14px/1.6 Arial,sans-serif;color:var(--pink-dark);white-space:pre-wrap}.qr{display:flex;justify-content:center;margin:16px auto}.qr img{max-width:100%}footer{margin-top:32px;padding-top:20px;border-top:1px solid #f0dfe0;font:12px Arial,sans-serif;color:var(--muted)}dialog{border:0;border-radius:12px;padding:12px;max-width:95vw;max-height:95vh;background:#fffdf9}dialog::backdrop{background:#26171bcc}dialog img{display:block;max-width:88vw;max-height:80vh;object-fit:contain}#closePhoto{display:block;margin-left:auto;border:0;background:none;font-size:28px;cursor:pointer}
+.admin-page{font-family:Arial,sans-serif}.admin-header{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:18px max(18px,calc((100% - 1200px)/2));background:#fffdf9;border-bottom:1px solid var(--line);color:var(--pink);font-size:12px;letter-spacing:1px}.admin-header a{text-decoration:none;font-family:Georgia,serif;font-size:19px;letter-spacing:0}.admin-wrap{max-width:1200px;margin:24px auto;padding:0 16px}.admin-card{background:white;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px;min-width:0}.admin-card h1,.admin-card h2,.admin-toolbar h1{color:var(--pink-dark);font-weight:500}.admin-card form{max-width:620px}.admin-card input[type=file]{display:block;width:100%;margin-top:7px;font-size:14px}.admin-card .checkline{display:flex;gap:9px;align-items:center}.checkline input{width:auto}.hint{font-size:12px;color:var(--muted);line-height:1.6}.admin-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}.admin-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px;align-items:start}.wedding-list{display:grid;gap:12px}.wedding-item{display:flex;justify-content:space-between;gap:12px;padding:13px;border:1px solid #f0dfe0;border-radius:10px}.wedding-item p{margin:6px 0;font-size:13px}.wedding-item a,.text-button{font-size:13px}.text-button{border:0;background:none;color:var(--pink-dark);cursor:pointer;margin-left:8px}.item-actions{display:flex;align-items:center}.preview-wrap img{width:100%;max-width:240px;max-height:220px;object-fit:cover;border-radius:8px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px;border-bottom:1px solid #f0dfe0;vertical-align:top}th{background:#fff6f4;color:var(--pink-dark);white-space:nowrap}
+@media(max-width:800px){.admin-grid{grid-template-columns:1fr}.admin-toolbar{align-items:flex-start}.wedding-item{flex-direction:column}.admin-header{font-size:10px}.gallery img{height:160px}.invitation{border-radius:150px 150px 16px 16px}}
+
+  </style>
+</head>
+<body class="admin-page">
+  <header class="admin-header"><a href="./index.html">♡ Thiệp Cưới Ngọc Thương</a><span>TRANG QUẢN TRỊ</span></header>
+  <main class="admin-wrap">
+    <section id="loginPanel" class="admin-card">
+      <h1>Đăng nhập quản trị</h1>
+      <p class="muted">Chỉ tài khoản được cấp quyền mới có thể quản lý thiệp và RSVP.</p>
+      <form id="loginForm">
+        <label>Email quản trị<input name="email" type="email" autocomplete="username" required></label>
+        <label>Mật khẩu<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button primary" type="submit">Đăng nhập</button>
+        <p id="loginFeedback" class="feedback" aria-live="polite"></p>
+      </form>
+    </section>
+    <section id="dashboard" class="hidden">
+      <div class="admin-toolbar"><div><h1>Quản lý thiệp cưới</h1><p id="signedInAs" class="muted"></p></div><button id="logoutButton" class="button">Đăng xuất</button></div>
+      <div class="admin-grid">
+        <section class="admin-card">
+          <h2 id="editorTitle">Tạo thiệp mới</h2>
+          <form id="weddingForm">
+            <input type="hidden" name="docId">
+            <label>Mã thiệp (chữ/số, không dấu)<input name="slug" required pattern="[A-Za-z0-9_-]{3,40}" maxlength="40" placeholder="NT001"></label>
+            <label>Tên cô dâu<input name="bride" required maxlength="80"></label>
+            <label>Tên chú rể<input name="groom" required maxlength="80"></label>
+            <label>Tên khách mời (hiển thị trên thiệp)<input name="guest" maxlength="120" placeholder="Quý khách và gia đình"></label>
+            <label>Ngày cưới<input name="date" type="date" required></label>
+            <label>Giờ tổ chức<input name="time" type="time" required></label>
+            <label>Địa điểm<input name="venue" required maxlength="180"></label>
+            <label>Địa chỉ đầy đủ<input name="address" required maxlength="300"></label>
+            <label>Link Google Maps<input name="mapUrl" type="url" placeholder="https://maps.google.com/..." required></label>
+            <label>Lời mời<textarea name="intro" rows="3" maxlength="500"></textarea></label>
+            <label>Ảnh bìa (JPG, PNG, WebP; tối đa 5 MB)<input name="cover" type="file" accept="image/jpeg,image/png,image/webp"></label>
+            <div id="coverPreviewWrap" class="preview-wrap hidden"><img id="coverPreview" alt="Xem trước ảnh bìa"></div>
+            <label>Album ảnh (chọn nhiều ảnh, tối đa 5 MB mỗi ảnh)<input name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple></label>
+            <p class="hint">Khi sửa thiệp, ảnh cũ được giữ nguyên nếu bạn không chọn ảnh mới. Chọn ảnh mới sẽ thêm vào album.</p>
+            <label>Nhạc nền (MP3, tối đa 8 MB)<input name="music" type="file" accept="audio/mpeg,audio/mp3"></label>
+            <label>Hoặc URL nhạc MP3 (không bắt buộc)<input name="musicUrl" type="url" placeholder="https://.../nhac.mp3"></label>
+            <label class="checkline"><input name="published" type="checkbox"> Phát hành thiệp công khai</label>
+            <div class="button-row left">
+              <button class="button primary" type="submit">Lưu thiệp</button>
+              <button id="resetForm" class="button" type="button">Làm mới</button>
+            </div>
+            <p id="saveFeedback" class="feedback" aria-live="polite"></p>
+          </form>
+        </section>
+        <section class="admin-card">
+          <h2>Danh sách thiệp</h2>
+          <p class="muted">Chọn Sửa để cập nhật hoặc mở link để kiểm tra thiệp.</p>
+          <div id="weddingList" class="wedding-list">Đang tải…</div>
+        </section>
+      </div>
+      <section class="admin-card">
+        <h2>Danh sách xác nhận tham dự (RSVP)</h2>
+        <label>Lọc theo thiệp<select id="rsvpWeddingFilter"><option value="">Tất cả thiệp</option></select></label>
+        <div class="table-wrap"><table><thead><tr><th>Thời gian</th><th>Thiệp</th><th>Khách</th><th>Số người</th><th>Trạng thái</th><th>Lời chúc</th></tr></thead><tbody id="rsvpRows"><tr><td colspan="6">Đang tải…</td></tr></tbody></table></div>
+      </section>
+    </section>
+  </main>
+  <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import { getFirestore, collection, doc, getDoc, getDocs, setDoc, updateDoc, deleteField, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-storage.js";
+// DÁN THÔNG TIN firebaseConfig CỦA BẠN VÀO ĐÂY SAU KHI LẤY TỪ FIREBASE CONSOLE.
+const firebaseConfig = {
+  apiKey: "AIzaSyBoBxJvJ1eo6KniFtzC7tTgEOrgxmckndk",
+  authDomain: "thiep-cuoi-online-fa5d4.firebaseapp.com",
+  projectId: "thiep-cuoi-online-fa5d4",
+  storageBucket: "thiep-cuoi-online-fa5d4.firebasestorage.app",
+  messagingSenderId: "677765348842",
+  appId: "1:677765348842:web:001834792642097f5e4693"
+};
+// Thay email bên dưới bằng email quản trị đã tạo trong Firebase Authentication.
+const ADMIN_EMAILS = ["minhthongsr@gmail.com"] ;
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+
+const $ = id => document.getElementById(id);
+const form = $("weddingForm");
+let weddingsCache = [];
+let editingData = null;
+const isAdmin = user => !!user?.email && ADMIN_EMAILS.map(x => x.toLowerCase()).includes(user.email.toLowerCase());
+const escapeHtml = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+const val = name => String(form.elements[name]?.value ?? "").trim();
+
+$("loginForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  const f = new FormData(e.currentTarget);
+  $("loginFeedback").textContent = "Đang đăng nhập…";
+  try {
+    const credential = await signInWithEmailAndPassword(auth, String(f.get("email")).trim(), String(f.get("password")));
+    if (!isAdmin(credential.user)) {
+      await signOut(auth);
+      $("loginFeedback").textContent = "Tài khoản này chưa được cấp quyền quản trị.";
+    } else $("loginFeedback").textContent = "";
+  } catch (err) {
+    console.error(err);
+    $("loginFeedback").textContent = "Đăng nhập thất bại. Vui lòng kiểm tra email và mật khẩu.";
+  }
+});
+$("logoutButton").addEventListener("click", () => signOut(auth));
+onAuthStateChanged(auth, async user => {
+  if (user && isAdmin(user)) {
+    $("loginPanel").classList.add("hidden");
+    $("dashboard").classList.remove("hidden");
+    $("signedInAs").textContent = `Đã đăng nhập: ${user.email}`;
+    await refreshData();
+  } else {
+    $("dashboard").classList.add("hidden");
+    $("loginPanel").classList.remove("hidden");
+  }
+});
+
+async function refreshData() {
+  $("weddingList").textContent = "Đang tải…";
+  try {
+    const snap = await getDocs(query(collection(db, "weddings"), orderBy("updatedAt", "desc")));
+    weddingsCache = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    renderWeddings();
+    await loadRsvps();
+  } catch (err) {
+    console.error(err);
+    $("weddingList").textContent = "Không tải được dữ liệu. Kiểm tra Security Rules và tài khoản quản trị.";
+  }
+}
+function renderWeddings() {
+  const list = $("weddingList");
+  const filter = $("rsvpWeddingFilter");
+  const previous = filter.value;
+  filter.innerHTML = '<option value="">Tất cả thiệp</option>';
+  list.innerHTML = "";
+  if (!weddingsCache.length) list.textContent = "Chưa có thiệp nào. Hãy tạo thiệp đầu tiên.";
+  for (const w of weddingsCache) {
+    const option = document.createElement("option");
+    option.value = w.id; option.textContent = `${w.bride || ""} & ${w.groom || ""} (${w.id})`;
+    filter.append(option);
+    const item = document.createElement("article");
+    item.className = "wedding-item";
+    const link = new URL("./index.html", location.href);
+    link.searchParams.set("id", w.id);
+    item.innerHTML = `<div><strong>${escapeHtml(w.bride)} & ${escapeHtml(w.groom)}</strong>
+      <p class="muted">${escapeHtml(w.date || "")} · ${w.published ? "Đã phát hành" : "Bản nháp"}</p>
+      <a href="${escapeHtml(link.href)}" target="_blank" rel="noopener">Mở thiệp</a>
+      <button type="button" class="text-button copy-link">Sao chép link</button></div>
+      <div class="item-actions"><button type="button" class="button edit">Sửa</button></div>`;
+    item.querySelector(".edit").addEventListener("click", () => populateForm(w));
+    item.querySelector(".copy-link").addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(link.href); alert("Đã sao chép link thiệp."); }
+      catch { prompt("Sao chép link thiệp:", link.href); }
+    });
+    list.append(item);
+  }
+  filter.value = previous;
+}
+function populateForm(w) {
+  editingData = w;
+  $("editorTitle").textContent = `Sửa thiệp: ${w.id}`;
+  for (const key of ["slug","bride","groom","guest","date","time","venue","address","mapUrl","intro","musicUrl"]) {
+    form.elements[key].value = key === "slug" ? w.id : (w[key] || "");
+  }
+  form.elements.published.checked = w.published === true;
+  form.elements.docId.value = w.id;
+  $("coverPreviewWrap").classList.toggle("hidden", !w.coverUrl);
+  if (w.coverUrl) $("coverPreview").src = w.coverUrl;
+  $("saveFeedback").textContent = "Ảnh cũ sẽ được giữ nếu không chọn ảnh mới.";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+function resetEditor() {
+  editingData = null; form.reset(); form.elements.docId.value = "";
+  $("editorTitle").textContent = "Tạo thiệp mới";
+  $("coverPreviewWrap").classList.add("hidden"); $("saveFeedback").textContent = "";
+}
+$("resetForm").addEventListener("click", resetEditor);
+
+async function uploadImage(file, weddingId, pathName) {
+  if (!file) return null;
+  if (!["image/jpeg","image/png","image/webp"].includes(file.type)) throw new Error("Chỉ chấp nhận ảnh JPG, PNG hoặc WebP.");
+  if (file.size > 5 * 1024 * 1024) throw new Error("Mỗi ảnh tối đa 5 MB.");
+  const cleanName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_").slice(-90);
+  const objectRef = ref(storage, `weddings/${weddingId}/${pathName}/${Date.now()}-${cleanName}`);
+  await uploadBytes(objectRef, file, { contentType: file.type });
+  return getDownloadURL(objectRef);
+}
+async function uploadMusic(file, weddingId) {
+  if (!file) return null;
+  if (!["audio/mpeg","audio/mp3"].includes(file.type)) throw new Error("Nhạc nền phải là MP3.");
+  if (file.size > 8 * 1024 * 1024) throw new Error("File nhạc tối đa 8 MB.");
+  const objectRef = ref(storage, `weddings/${weddingId}/music/${Date.now()}-${file.name.replace(/[^a-zA-Z0-9._-]/g,"_")}`);
+  await uploadBytes(objectRef, file, { contentType: "audio/mpeg" });
+  return getDownloadURL(objectRef);
+}
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const button = form.querySelector('button[type="submit"]');
+  const slug = val("slug");
+  if (!/^[A-Za-z0-9_-]{3,40}$/.test(slug)) { $("saveFeedback").textContent = "Mã thiệp chỉ gồm chữ không dấu, số, gạch ngang hoặc gạch dưới (3–40 ký tự)."; return; }
+  button.disabled = true; $("saveFeedback").textContent = "Đang lưu thiệp và tải ảnh lên…";
+  try {
+    const oldId = form.elements.docId.value;
+    if (oldId && oldId !== slug) {
+      const oldSnap = await getDoc(doc(db, "weddings", oldId));
+      if (oldSnap.exists()) throw new Error("Không thể đổi mã thiệp khi đang sửa. Hãy giữ nguyên mã cũ để link đã gửi không bị hỏng.");
+    }
+    const existingSnap = await getDoc(doc(db, "weddings", slug));
+    if (!oldId && existingSnap.exists()) throw new Error("Mã thiệp này đã tồn tại. Hãy chọn mã khác.");
+    const old = existingSnap.exists() ? existingSnap.data() : (editingData || {});
+    const coverFile = form.elements.cover.files[0];
+    const coverUrl = coverFile ? await uploadImage(coverFile, slug, "cover") : (old.coverUrl || "");
+    let photos = Array.isArray(old.photos) ? [...old.photos] : [];
+    const photoFiles = Array.from(form.elements.photos.files || []);
+    for (const file of photoFiles) {
+      const url = await uploadImage(file, slug, "album");
+      photos.push({ url, alt: `Ảnh cưới ${val("bride")} và ${val("groom")}` });
+    }
+    photos = photos.slice(-30);
+    const musicFile = form.elements.music.files[0];
+    const uploadedMusic = musicFile ? await uploadMusic(musicFile, slug) : null;
+    const musicUrl = uploadedMusic || val("musicUrl") || old.musicUrl || "";
+    const payload = {
+      bride: val("bride"), groom: val("groom"), guest: val("guest") || "Quý khách",
+      date: val("date"), time: val("time"), venue: val("venue"), address: val("address"),
+      mapUrl: val("mapUrl"), intro: val("intro"), coverUrl, photos, musicUrl,
+      published: form.elements.published.checked,
+      updatedAt: serverTimestamp()
+    };
+    if (!existingSnap.exists()) payload.createdAt = serverTimestamp();
+    await setDoc(doc(db, "weddings", slug), payload, { merge: true });
+    $("saveFeedback").textContent = "Đã lưu thiệp thành công.";
+    resetEditor();
+    await refreshData();
+  } catch (err) {
+    console.error(err);
+    $("saveFeedback").textContent = err.message || "Không thể lưu thiệp. Hãy kiểm tra quyền Firebase.";
+  } finally { button.disabled = false; }
+});
+
+$("rsvpWeddingFilter").addEventListener("change", loadRsvps);
+async function loadRsvps() {
+  const body = $("rsvpRows");
+  body.innerHTML = '<tr><td colspan="6">Đang tải…</td></tr>';
+  try {
+    const selected = $("rsvpWeddingFilter").value;
+    const targets = selected ? weddingsCache.filter(w => w.id === selected) : weddingsCache;
+    const rows = [];
+    for (const w of targets) {
+      const snap = await getDocs(query(collection(db, "weddings", w.id, "rsvps"), orderBy("createdAt", "desc")));
+      snap.forEach(d => rows.push({ wedding: w, ...d.data() }));
+    }
+    rows.sort((a,b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
+    body.innerHTML = "";
+    if (!rows.length) { body.innerHTML = '<tr><td colspan="6">Chưa có xác nhận tham dự.</td></tr>'; return; }
+    for (const r of rows) {
+      const tr = document.createElement("tr");
+      const date = r.createdAt?.toDate ? r.createdAt.toDate().toLocaleString("vi-VN") : "—";
+      [date, `${r.wedding.bride || ""} & ${r.wedding.groom || ""}`, r.name || "",
+       String(r.attendees ?? ""), r.status === "yes" ? "Sẽ tham dự" : "Không tham dự", r.message || ""]
+        .forEach(value => { const td = document.createElement("td"); td.textContent = value; tr.append(td); });
+      body.append(tr);
+    }
+  } catch (err) {
+    console.error(err); body.innerHTML = '<tr><td colspan="6">Không đọc được RSVP. Kiểm tra Security Rules.</td></tr>';
+  }
+}
+
+  </script>
+</body>
+</html>
